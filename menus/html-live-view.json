@@ -1,0 +1,26 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Toggle html-live-view",
+        "command": "html-live-view:toggle"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "html-live-view",
+          "submenu": [
+            {
+              "label": "Toggle",
+              "command": "html-live-view:toggle"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
