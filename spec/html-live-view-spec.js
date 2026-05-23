@@ -115,21 +115,6 @@ describe('HtmlLiveView', () => {
       });
     });
 
-    it('injects theme variables without corrupting the html tag', () => {
-      waitsForPromise(() => activationPromise);
-      runs(() => {
-        const view = new HtmlLiveView(tempFilePath);
-        waitsFor(() => view._tmpPath);
-        runs(() => {
-          view.updateTheme(true);
-          const rendered = fs.readFileSync(view._tmpPath, 'utf8');
-          expect(rendered).toContain('<html data-theme="dark">');
-          expect(rendered).not.toContain('<html data-theme="dark"<html');
-          view.destroy();
-        });
-      });
-    });
-
     it('serializes to a restorable state', () => {
       waitsForPromise(() => activationPromise);
       runs(() => {

@@ -9,15 +9,6 @@
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
-  "activationCommands": {
-    "atom-workspace": [
-      "html-live-view:toggle"
-    ],
-    ".html-live-view": [
-      "html-live-view:refresh",
-      "html-live-view:devtools"
-    ]
-  },
   "configSchema": {
     "debounceDelay": {
       "type": "integer",
@@ -40,10 +31,6 @@
     "sandboxAllowPopups": {
       "type": "boolean",
       "default": false
-    },
-    "followTheme": {
-      "type": "boolean",
-      "default": true
     }
   },
   "dependencies": {}
