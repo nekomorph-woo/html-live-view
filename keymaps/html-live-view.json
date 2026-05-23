@@ -1,4 +1,13 @@
 {
+  "atom-text-editor:not([mini])": {
+    "alt-h": "html-live-view:toggle"
+  },
+  ".html-live-view": {
+    "alt-h": "html-live-view:toggle"
+  },
+  "atom-workspace .html-live-view": {
+    "alt-h": "html-live-view:toggle"
+  },
   "atom-workspace": {
     "alt-h": "html-live-view:toggle"
   }
