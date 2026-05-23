@@ -2,7 +2,7 @@
   "context-menu": {
     "atom-text-editor": [
       {
-        "label": "Toggle html-live-view",
+        "label": "Toggle HTML Live View",
         "command": "html-live-view:toggle"
       }
     ]
@@ -12,11 +12,19 @@
       "label": "Packages",
       "submenu": [
         {
-          "label": "html-live-view",
+          "label": "HTML Live View",
           "submenu": [
             {
-              "label": "Toggle",
+              "label": "Toggle Preview",
               "command": "html-live-view:toggle"
+            },
+            {
+              "label": "Refresh Preview",
+              "command": "html-live-view:refresh"
+            },
+            {
+              "label": "Open DevTools",
+              "command": "html-live-view:devtools"
             }
           ]
         }

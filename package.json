@@ -1,18 +1,50 @@
 {
   "name": "html-live-view",
   "main": "./lib/html-live-view",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Render HTML files with live JS/CSS interaction in Pulsar editor",
-  "keywords": [
-  ],
-  "activationCommands": {
-    "atom-workspace": "html-live-view:toggle"
-  },
-  "repository": "https://github.com/atom/html-live-view",
+  "keywords": [],
+  "repository": "https://github.com/nekomorph-woo/html-live-view",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
-  "dependencies": {
-  }
+  "activationCommands": {
+    "atom-workspace": [
+      "html-live-view:toggle"
+    ],
+    ".html-live-view": [
+      "html-live-view:refresh",
+      "html-live-view:devtools"
+    ]
+  },
+  "configSchema": {
+    "debounceDelay": {
+      "type": "integer",
+      "default": 300,
+      "minimum": 100,
+      "maximum": 3000
+    },
+    "autoReload": {
+      "type": "boolean",
+      "default": true
+    },
+    "sandboxAllowForms": {
+      "type": "boolean",
+      "default": true
+    },
+    "sandboxAllowModals": {
+      "type": "boolean",
+      "default": false
+    },
+    "sandboxAllowPopups": {
+      "type": "boolean",
+      "default": false
+    },
+    "followTheme": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "dependencies": {}
 }
