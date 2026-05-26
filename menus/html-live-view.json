@@ -5,6 +5,31 @@
         "label": "Toggle HTML Live View",
         "command": "html-live-view:toggle"
       }
+    ],
+    ".html-live-view": [
+      {
+        "label": "Copy",
+        "command": "html-live-view:copy"
+      },
+      {
+        "label": "Open Link",
+        "command": "html-live-view:open-link"
+      },
+      {
+        "type": "separator"
+      },
+      {
+        "label": "Refresh Preview",
+        "command": "html-live-view:refresh"
+      },
+      {
+        "label": "Toggle Source",
+        "command": "html-live-view:toggle"
+      },
+      {
+        "label": "Open DevTools",
+        "command": "html-live-view:devtools"
+      }
     ]
   },
   "menu": [
